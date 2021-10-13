@@ -19,3 +19,18 @@ NLP project to leverage Levenshtein distance to spell correct text in a corpus. 
 ![Screen Shot 2021-10-13 at 12 13 19 AM](https://user-images.githubusercontent.com/89488845/137066137-f4440226-e7c4-4aef-bae0-e8b027123994.png)
 **Corrected text:**
 ![Screen Shot 2021-10-13 at 12 09 26 AM](https://user-images.githubusercontent.com/89488845/137065855-75b3562f-e39b-4e55-b364-2706cc38cf4d.png)
+
+## Highlights & Limitations
+
+SpellingCorrector works well: 
+- for cases involving multiple types of delimiters and/or a combination of delimiters.
+- to keep the uppercase, titlecase and numeric characteristics of each token.
+
+With some limitations:
+- The speed - feel free to calculate the bigO notation yourself 😛 
+- unaccounted edge cases include 
+  - contractions
+  - plurals
+  - nonASCII characters
+  - corrupted numbers
+  - words that are mispelled to be an existing different word (i.e. "in" as "i")
