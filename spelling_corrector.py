@@ -8,7 +8,7 @@ with open("english_words_list.txt") as v:
     # Note: can replace this txt with better list for better results
     words = text.splitlines()
 
-with open("random text.txt") as b:
+with open("random_text.txt") as b:
     # Note: can replace this txt with your own corrupted text
     book = b.read()
 
